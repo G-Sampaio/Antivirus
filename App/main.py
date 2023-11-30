@@ -6,7 +6,7 @@ def verificar_Arquivo(verifica_Diretorio):
     malicioso_Encontrado = False
     for root,dirs,files in os.walk(verifica_Diretorio):
         for arquivo in files:
-            if arquivo.endswith(('.bat','.exe','.txt')):
+            if arquivo.endswith(('.bat','.exe')):
                 caminho = os.path.join(root, arquivo)
                 print(f"Arquivo Malícioso encontrado no Diretório {caminho}")
                 virus_Encontrado = True
