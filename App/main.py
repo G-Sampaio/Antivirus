@@ -1,5 +1,6 @@
 import os 
-verifica_Diretorio=(r'C:\Users\GuilhermeSampaio\OneDrive - BIOTROP SOLUÇÕES BIOLÓGICAS\Documentos\codes\AntiVirus Python\Vírus')
+
+verifica_Diretorio=(r'C:\Users\GuilhermeSampaio\OneDrive - BIOTROP SOLUÇÕES EM TECNOLOGIA BIOLÓGICA\Documentos\codes\AntiVirus Python\Vírus')
 
 
 def verificar_Arquivo(verifica_Diretorio):

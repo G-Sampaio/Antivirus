@@ -2,7 +2,7 @@ from tkinter import *
 import os
 
 def verificar_Arquivo():
-    verifica_Diretorio = r'C:\Users\GuilhermeSampaio\OneDrive - BIOTROP SOLUÇÕES BIOLÓGICAS\Documentos\codes\AntiVirus Python\Vírus'
+    verifica_Diretorio = r'C:\Users\GuilhermeSampaio\OneDrive - BIOTROP SOLUÇÕES EM TECNOLOGIA BIOLÓGICA\Documentos\codes\AntiVirus Python\Vírus'
     malicioso_Encontrado = False
 
     for root, dirs, files in os.walk(verifica_Diretorio):
@@ -31,8 +31,8 @@ texto_Orientacao.grid(column=0, row=0, padx=10, pady=10)
 botao_Iniciar = Button(Janela, text="Iniciar Scan de arquivos!", command=verificar_Arquivo)
 botao_Iniciar.grid(column=0, row=1, padx=10, pady=10)
 
-arquivos_Encontrados = Label(Janela, text="")
-arquivos_Encontrados.grid(column=0, row=2, padx=10, pady=10)
+# arquivos_Encontrados = Label(Janela, text=f"Arquivo Malicioso encontrado no Diretório")
+# arquivos_Encontrados.grid(column=0, row=2, padx=10, pady=10)
 
 Janela.mainloop()
 
