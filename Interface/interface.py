@@ -5,7 +5,7 @@ from tkinter import filedialog
 
 def verificar_Arquivo(verifica_Diretorio):
     malicioso_Encontrado = False
-    lista_arquivos.delete(0, tk.END)  # Limpa a lista de arquivos
+    lista_arquivos.delete(0, tk.END)
     for root, dirs, files in os.walk(verifica_Diretorio):
         for arquivo in files:
             if arquivo.endswith(('.bat', '.exe')):
@@ -31,7 +31,7 @@ def verificar_antivirus():
             print(f"Ocorreu um erro: {e}")
 
 janela = tk.Tk()
-janela.geometry("500x300")
+janela.geometry("700x700")
 janela.title("Antivírus")
 
 label_instrucao = tk.Label(janela, text="Selecione a pasta a ser verificada:")
